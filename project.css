@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image: url("bg.png");
+}
+.header{
+    background-image: url("phn.jpg");
+    height: 700px;
+    padding-top: 50px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+}
+.menu {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.menu button {
+
+    padding: 3px;
+    border: none;
+    border-radius:40% ;
+    width: 50px;
+    float: right;
+    cursor: pointer;
+}
+
+.menu div {
+    display: none;
+}
+
+.menu:hover div,
+.menu button:focus + div { 
+    display: inline-block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: #f2f2f2;
+    display: block;
+    color: black;
+}
+
+h2{
+    font-size:80px;
+}
+p{
+    font-size: x-large;
+}
+
+
+.container{
+    display: flex;
+    background-color: grey;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.box1, .box2, .box3, .box4{
+    text-align: center;
+    background-color: white;
+    padding-top: 80px;
+    margin: 5px 5px;
+    height: 400px;
+    width:100%;
+}
+/* .box>img{
+    width:40px;
+    padding:20px;
+
+} */
+
+div[class^="box"] {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+
+div[class^="box"]:hover {
+    background-color: rgb(11, 131, 223);
+    transform: scale(1.1);
+    color: white;
+    border-color: rgb(1, 1, 25);
+}
+
+
+.download{
+    background-image: url("./download_background.jpg");
+    margin-top: 100px;
+    height: 800px;
+
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 50px;
+}
+.contact{
+    background-color:none;
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.fl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+.logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    object-fit: cover;
+    padding: 10px;
+}
+.footer{
+    background-color: white;
+    color: black;
+    height: 100px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
